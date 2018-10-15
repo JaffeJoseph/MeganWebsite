@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #581F18;
+}
+
+.layout {
+  display: grid;
+  grid-template-rows: 130px auto auto 20px;
+  grid-template-areas:
+    "header header header"
+    ". subheader ."
+    "sidenav content content"
+    "footer footer footer";
+  height: 100vh;
+
+}
+
+.header {
+  grid-area: header;
+  font-size: 100px;
+  justify-self: center;
+}
+
+.subheader {
+  grid-area: subheader;
+  justify-self: center;
+  align-self: flex-start;
+
+  font-size: 30px;
+}
+
+.content {
+  grid-area: content;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #273043;
+  color: white;
+  width: 100%;
+  height: 20px;
+  text-align: center;
+
+}
